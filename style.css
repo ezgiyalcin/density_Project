@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -11,6 +12,7 @@
     --white: #f5f5f5;
     --black: #121212;
     --grey: #cdcccc;
+    --darkGrey: grey;
 }
 
 a {
@@ -52,6 +54,7 @@ body {
     background: var(--black);
     overflow-x: hidden;
     font-family: 'Poppins';
+
 }
 
 header {
@@ -86,7 +89,7 @@ header nav .specLink {
 
 /* Footer */
 footer {
-    padding: 60px;
+    padding: 50px 0 20px 0;
 
 }
 
@@ -127,7 +130,7 @@ footer .footerBottom {
     text-align: center;
     margin-top: 50px;
     border-top: 1px solid var(--grey);
-    padding: 20px;
+    padding: 20px 0 0 0;
 
 
 }
@@ -237,7 +240,7 @@ section {
         gap: 20px;
         padding: 20px;
         border-radius: 10px;
-
+        place-items: center;
         border: #16ff00 solid 1px;
 
         & video {
@@ -245,6 +248,320 @@ section {
 
         }
     }
+}
+
+.listSecInfo {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 150px;
+
+}
+
+.listSecList span {
+    font-size: 12px;
+    color: var(--darkGrey);
+}
+
+.listSecList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid var(--darkGrey);
+
+    & img {
+        height: 50px;
+    }
+}
+
+.projectsPage {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.projectsWelcome {
+    font-size: 56px;
+    max-width: 900px;
+    padding: 100px;
+    color: transparent;
+    background-image: linear-gradient(to right top, #ff00f1 15%, #4b51ff, #00ff28 80%);
+    -webkit-background-clip: text;
+
+}
+
+.whatSec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.whatWeDo {
+
+    margin-top: 50px;
+
+    & p {
+        max-width: 1000px;
+        margin-top: 20px;
+        max-width: 400px;
+    }
+
+}
+
+.whatCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+
+    & .whatCard {
+
+        text-align: center;
+
+
+        & img {
+            width: 50px;
+
+            justify-self: center;
+
+
+        }
+
+        & .whatCardInner {
+            background: rgba(180, 180, 180, 0.15);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10.4px);
+            -webkit-backdrop-filter: blur(10.4px);
+            border: 1px solid rgba(180, 180, 180, 0.33);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            gap: 20px;
+            max-width: 400px;
+            height: 200px;
+
+        }
+    }
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    ;
+
+    & .projectsCards {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.projectsCard {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+
+
+    & p {
+        font-size: 10px;
+    }
+
+    & .projectCardInner {
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+.projectImage {
+    background-color: rgba(128, 128, 128, 0.393);
+    padding: 40px 50px 0;
+    position: relative;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.projectImage:hover {
+    background-image: linear-gradient(to right top, #ff00f1 15%, #4b51ff, #00ff28 80%);
+    transition: 0.2s;
+}
+
+.projectsImage {
+    max-width: 300px;
+
+
+
+}
+
+.projectIcon {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+.team {
+    margin: 0 30px 0 30px;
+}
+
+.countSec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin: 0 50px 0 50px;
+}
+
+.countSecLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.counterBoxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+
+}
+
+.counter {
+    background: rgba(180, 180, 180, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.4px);
+    -webkit-backdrop-filter: blur(10.4px);
+    border: 1px solid rgba(180, 180, 180, 0.33);
+    padding: 20px;
+}
+
+.counterBox {
+    background-color: var(--black);
+    text-align: center;
+    border-radius: 16px;
+    padding: 10px;
+    font-size: 10px;
+
+}
+
+.teamButtons {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+    & button {
+        background-color: transparent;
+        color: var(--white);
+        border: 1px solid var(--green);
+        cursor: pointer;
+    }
+}
+
+.countSecRight img {
+    border-radius: 20px;
+    margin-right: 50px;
+}
+
+.teamImagesSec {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.teamImageWrapper {
+    position: relative;
+
+    & img {
+        width: 300px;
+        border-radius: 20px;
+    }
+
+    & h1 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: rgba(180, 180, 180, 0.15);
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10.4px);
+        -webkit-backdrop-filter: blur(10.4px);
+    }
+
+
+}
+.donationSecTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.donationSecCard{
+    display: flex;
+    gap: 10px;
+    border-radius: 50px;
+    background-color:#9b32a7;
+    padding: 10px;
+    align-items: center;
+    & img{
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+
+    }
+    & .donationCardInner{
+        font-size: 10px;
+        & span{
+            font-weight: bold;
+        }
+    }
+}
+.donationSecCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:1100px){
+    .teamImagesSec{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+
+    }
+
+    
 }
 
 @media (max-width:1000px) {
@@ -274,6 +591,17 @@ section {
 
     footer form {
         flex-direction: column;
+    }
+
+    .projectsWelcome {
+        padding: 100px 20px;
+        font-size: 35px;
+        max-width: 600px;
+    }
+
+    .projectsWelcome {
+        padding-bottom: 15px;
+        padding-top: 30px;
     }
 }
 
@@ -321,11 +649,69 @@ section {
 
     #cardSec {
         margin-top: 200px;
-        
+
 
     }
 
+    .listSecInfo {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .whatCards {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .whatSec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 0;
+    }
+
+    .projectsWelcome {
+        padding-bottom: 15px;
+    }
+
+    .whatCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        & img {
+            align-self: center;
+        }
+
+    }
+
+    .projectsCard {
+        display: flex;
+        flex-direction: column-reverse;
+
+
+
+        & img {}
+
+
+    }
+
+    .countSec {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        
+    }
+
+    .countSecRight img {
+        margin-right: 0;
+    }
 }
+
+
+
 
 
 @media (max-width: 500px) {
@@ -337,5 +723,12 @@ section {
         padding: 5px;
         gap: 10px;
         font-size: smaller;
+    }
+
+    .whatCard {
+        width: 200px;
+    }
+    .teamImageWrapper img{
+        width: 250px;
     }
 }

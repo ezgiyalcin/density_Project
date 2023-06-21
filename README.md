@@ -5,6 +5,8 @@
 
  <h2>Used technologies</h2>
 
- Html, CSS, 
+ Html, CSS, JavaScript
 
- 
+  <h3>Screen Record</h3>
+
+![](screen_record%20(3).gif)
